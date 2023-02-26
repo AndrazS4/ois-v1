@@ -7,7 +7,7 @@ public class Gravitacija {
 	}
 	
 public static void izpis(double nadmorskaVisina) {
-	System.out.println("nadmorska visina: " + nadmorskaVisina + " pospesek: " + gravitacijskiPospesek(nadmorskaVisina));
+	System.out.println(gravitacijskiPospesek(nadmorskaVisina));
 }
 	
 	public static double gravitacijskiPospesek(double nadmorskaVisina) {
