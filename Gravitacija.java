@@ -3,8 +3,12 @@ public class Gravitacija {
 		System.out.println("OIS je zakon!");
 	}
 	
+public static void izpis(double nadmorskaVisina) {
+	System.out.println("nadmorska visina: " + nadmorskaVisina + " pospesek: " + gravitacijskiPospesek(nadmorskaVisina));
+}
+	
 	public static double gravitacijskiPospesek(double nadmorskaVisina) {
 		//vrne pospesek po formuli a = G * M / (Rz + h)^2
-		return 6.674e-11d * 5.972e24d / ((6.371e6 + nadmorskaVisina)*(6.371e6 + nadmorskaVisina));
+		return 6.674e-11d * 5.972e24d / ((6.371e6d + nadmorskaVisina)*(6.371e6d + nadmorskaVisina));
 	}
 }
